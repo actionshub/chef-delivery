@@ -1,5 +1,7 @@
 # chef-delivery
 
+[![CI State](https://github.com/actionshub/chef-delivery/workflows/release/badge.svg)](https://github.com/actionshub/chef-delivery)
+
 A Github Action to run Chef Delivery on a cookbook
 
 Note you will need to accept the Chef license, you can find more information at <https://docs.chef.io/chef_license.html>
@@ -9,7 +11,7 @@ Note you will need to accept the Chef license, you can find more information at 
 ```yaml
 name: delivery
 
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   delivery:
