@@ -1,9 +1,9 @@
 name: 'Chef Delivery'
 author: 'Jason Field'
 description: 'Run Chef delivery on your cookbooks with ease'
-  runs:
-    using: 'docker'
-    image: 'Dockerfile'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
 branding:
   icon: 'tool'
   color: 'red'
