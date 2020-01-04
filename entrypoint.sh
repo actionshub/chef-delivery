@@ -1,0 +1,1 @@
+chef exec delivery local all
