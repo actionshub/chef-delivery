@@ -4,8 +4,6 @@
 
 A Github Action to run Chef Delivery on a cookbook
 
-Note you will need to accept the Chef license, you can find more information at <https://docs.chef.io/chef_license.html>
-
 ## Usage
 
 ```yaml
@@ -23,6 +21,4 @@ jobs:
       uses: actions/checkout@master
     - name: Run Chef Delivery
       uses: actionshub/chef-delivery@master
-      env:
-        CHEF_LICENSE: accept-no-persist
 ```
