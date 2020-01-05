@@ -1,4 +1,4 @@
-name: 'Chef Delivery'
+name: 'Chef-Delivery'
 author: 'Jason Field'
 description: 'Run Chef delivery on your cookbooks with ease'
 runs:
