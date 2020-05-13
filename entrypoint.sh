@@ -1,1 +1,1 @@
-chef exec delivery local all
+echo "::add-matcher::rubocop.json"
