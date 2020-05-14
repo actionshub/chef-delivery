@@ -1,2 +1,2 @@
-echo "::add-matcher::rubocop.json"
+printenv
 chef exec delivery local all
