@@ -1,0 +1,15 @@
+{
+  "problemMatcher": [
+    {
+      "owner": "rspec",
+      "pattern": [
+        {
+          "regexp": "rspec \\.\\/(.*)\\:(\\d+)\\s+#\\s+(.*)",
+          "file": 1,
+          "line": 2,
+          "message": 3
+        }
+      ]
+    }
+  ]
+}
