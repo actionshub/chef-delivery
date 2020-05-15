@@ -4,7 +4,7 @@
       "owner": "rspec",
       "pattern": [
         {
-          "regexp": ".*\\)\\s(.*)\\s+(\\w+\\/\\w+)\\:\\s+(.*\\s*expected.*\\s+got.*)\\s+\\#\\s+\\.\\/(.*)\\:(\\d+)\\:.*",
+          "regexp": "rspec \\.\\/(.*)\\:(\\d+)\\s+#\\s+(.*)",
           "file": 4,
           "line": 5,
           "code": 2,
