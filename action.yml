@@ -7,3 +7,8 @@ runs:
 branding:
   icon: 'tool'
   color: 'red'
+inputs:
+  gems:
+    description: 'String of gems to install'
+    required: false
+    default: ''
