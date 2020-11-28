@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - name: Check out code
-      uses: actions/checkout@master
+      uses: actions/checkout@main
     - name: Run Chef Delivery
-      uses: actionshub/chef-delivery@master
+      uses: actionshub/chef-delivery@main
 ```
