@@ -1,0 +1,10 @@
+--- /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/berkshelf-7.2.0/lib/berkshelf/file_syncer.rb.orig	2021-06-04 22:14:04.185823724 +0000
++++ /opt/chef-workstation/embedded/lib/ruby/gems/3.0.0/gems/berkshelf-7.2.0/lib/berkshelf/file_syncer.rb	2021-06-04 22:14:39.489439127 +0000
+@@ -89,6 +89,7 @@
+           destination = File.expand_path(destination)
+           FileUtils.ln_sf(target, "#{destination}/#{relative_path}")
+         when :file
++          FileUtils.touch(source_file)
+           FileUtils.cp(source_file, "#{destination}/#{relative_path}")
+         else
+           type = File.ftype(source_file)

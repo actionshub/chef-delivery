@@ -7,6 +7,8 @@ if [ -n "${INPUT_GEMS}" ] ; then
   echo "Installing gem(s): ${INPUT_GEMS}"
   chef gem install -N "${INPUT_GEMS}"
 fi
+set -x
+patch -d / -p0 < /berks-patch.patch
 chef --version
 chef env
 chef exec delivery local all
