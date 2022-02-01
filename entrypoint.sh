@@ -7,4 +7,5 @@ if [ -n "${INPUT_GEMS}" ] ; then
   echo "Installing gem(s): ${INPUT_GEMS}"
   chef gem install -N "${INPUT_GEMS}"
 fi
-chef exec delivery local all
+chef exec rspec spec/
+chef exec cookstyle --display-cop-names --extra-details
